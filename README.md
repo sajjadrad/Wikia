@@ -13,8 +13,8 @@ Just include wikia.inc.php and call parse function:
 
 ```php
 $content=htmlspecialchars($content);
-$map=generateMap($content);
-echo $map.parse($content);
+echo generateMap($content);
+echo parse($content);
 ```
 
 In addition you can generate map of content headers by calling generateMap function.
