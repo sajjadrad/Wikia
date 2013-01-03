@@ -9,7 +9,8 @@ some patterns fixed.
 How to Use
 ===
 Wikia convert MediaWiki markup to html and is easy to use:
-Just include wikia.inc.php and call parse function:
+Just include wikia.inc.php and call parse function.
+In addition you can generate map of content headers by calling generateMap function.
 
 ```php
 $content=htmlspecialchars($content);
@@ -17,6 +18,4 @@ echo generateMap($content);
 echo parse($content);
 ```
 
-In addition you can generate map of content headers by calling generateMap function.
 
-IMPORTANT : CALL generateMap FUNCTION BEFORE PARSING.
