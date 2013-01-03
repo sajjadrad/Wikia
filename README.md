@@ -13,6 +13,7 @@ Just include wikia.inc.php and call parse function.
 In addition you can generate map of content headers by calling generateMap function.
 
 ```php
+require_once("wikia.inc.php");
 $content=htmlspecialchars($content);
 echo generateMap($content);
 echo parse($content);
