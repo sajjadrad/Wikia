@@ -11,9 +11,11 @@ How to Use
 Wikia convert MediaWiki markup to html and is easy to use:
 Just include wikia.inc.php and call parse function:
 
-<code>$content=htmlspecialchars($content);<br/>
-$map=generateMap($content);<br/>
-echo parse($content);<br/></code>
+```php
+$content=htmlspecialchars($content);
+$map=generateMap($content);
+echo parse($content);
+```
 
 In addition you can generate map of content headers by calling generateMap function.
 
